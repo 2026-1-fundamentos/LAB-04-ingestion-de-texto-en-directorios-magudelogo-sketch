@@ -4,14 +4,10 @@
 """
 Escriba el codigo que ejecute la accion solicitada en cada pregunta.
 """
-
-
-import fileinput
-from glob import glob
 import os
-
 import pandas as pd
-
+import glob
+import fileinput
 
 def pregunta_01():
     """
@@ -76,9 +72,8 @@ def pregunta_01():
     |  4 | Tampere Science Parks is a Finnish company that owns , leases and builds office properties and it specialises in facilities for technology-oriented businesses         | neutral  |
     ```
 
-
     """
-    
+
     test_negative = []
     files = glob.glob("files/input/test/negative/*")
     with fileinput.input(files=files) as f:
